@@ -27,27 +27,27 @@ function Courses() {
     },
     {
       id: 4,
-      title: "AI Machine Learning",
-      description: "Python, ML algorithms, and deep learning",
-      duration: "6 months",
-    },
-    {
-      id: 5,
-      title: "Networking",
-      description: "Network infrastructure and protocols",
-      duration: "5 months",
-    },
-    {
-      id: 6,
       title: "Cloud Computing",
       description: "AWS, Azure, and cloud services",
       duration: "4 months",
     },
     {
+      id: 5,
+      title: "AI Machine Learning",
+      description: "Python, ML algorithms, and deep learning",
+      duration: "6 months",
+    },
+    {
+      id: 6,
+      title: "Networking",
+      description: "Network infrastructure and protocols",
+      duration: "5 months",
+    },
+    {
       id: 7,
-      title: "Digital Media Marketing",
-      description: "SEO, social media, and content marketing",
-      duration: "3 months",
+      title: "Shopify / Amazon",
+      description: "E-commerce setup and management",
+      duration: "2 months",
     },
     {
       id: 8,
@@ -57,9 +57,9 @@ function Courses() {
     },
     {
       id: 9,
-      title: "Shopify / Amazon",
-      description: "E-commerce setup and management",
-      duration: "2 months",
+      title: "Digital Media Marketing",
+      description: "SEO, social media, and content marketing",
+      duration: "3 months",
     },
   ];
 
