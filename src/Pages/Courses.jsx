@@ -27,9 +27,9 @@ function Courses() {
     },
     {
       id: 4,
-      title: "Software Development",
-      description: "Full-stack development skills",
-      duration: "8 months",
+      title: "AI Machine Learning",
+      description: "Python, ML algorithms, and deep learning",
+      duration: "6 months",
     },
     {
       id: 5,
@@ -51,9 +51,9 @@ function Courses() {
     },
     {
       id: 8,
-      title: "AI Machine Learning",
-      description: "Python, ML algorithms, and deep learning",
-      duration: "6 months",
+      title: "Software Development",
+      description: "Full-stack development skills",
+      duration: "8 months",
     },
     {
       id: 9,
