@@ -1,0 +1,81 @@
+.users-page {
+  min-height: 79vh;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* Page title */
+.title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Search area */
+.search-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-input {
+  padding: 10px;
+  width: 50%;
+  border: 2px solid #0077b6;
+  border-radius: 5px;
+  outline: none;
+}
+
+.user-input:focus {
+  border-color: #023e8a;
+}
+
+.search-btn {
+  padding: 10px 18px;
+  background-color: white;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  transition: 0.7s;
+}
+
+.search-btn:hover {
+  background-color: #797ff0;
+  color: white;
+}
+
+/* User card */
+.user-card {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f0fbff;
+  border-radius: 8px;
+}
+
+.card-title {
+  color: #043370;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: #026ca5;
+  margin-top: 15px;
+}
+
+.text {
+  color: #171974;
+}
+
+/* Paragraph spacing */
+.user-card p {
+  margin: 6px 0;
+}
+
+
