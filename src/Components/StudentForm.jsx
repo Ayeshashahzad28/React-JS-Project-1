@@ -4,6 +4,8 @@ function StudentForm() {
   const [students, setstudents] = useState({
     Firstname: "",
     Lastname: "",
+    Birthdate: "",
+    Gender: "",
     email: "",
     course: "",
   });
@@ -20,6 +22,8 @@ function StudentForm() {
     setstudents({
       Firstname: "",
       Lastname: "",
+      Birthdate: "",
+      Gender: "",
       email: "",
       course: "",
     });
@@ -51,19 +55,36 @@ function StudentForm() {
 
       {/* birthdate */}
       <label>Birth Date:</label>
-      <input type="date" />
+      <input
+        type="date"
+        name="Birthdate"
+        value={students.Birthdate}
+        onChange={handleChange}
+      />
 
       {/* gender */}
       <div className="radio-group">
         <label>Gender:</label>
         <div className="radio-btn">
           <label>
-            <input type="radio" name="gender" value="Male" />
+            <input
+              type="radio"
+              name="Gender"
+              value="Male"
+              checked={students.Gender === "Male"}
+              onChange={handleChange}
+            />
             Male
           </label>
 
           <label>
-            <input type="radio" name="gender" value="Female" />
+            <input
+              type="radio"
+              name="Gender"
+              value="Female"
+              checked={students.Gender === "Female"}
+              onChange={handleChange}
+            />
             Female
           </label>
         </div>
@@ -82,17 +103,22 @@ function StudentForm() {
 
       {/* student Courses */}
       <label>Course Enrollment</label>
-      <select name="course" id="course" onChange={handleChange}>
-        <option value="course">Select Course</option>
-        <option value="course">Web Development</option>
-        <option value="course">Cyber Security</option>
-        <option value="course">Graphic Designing</option>
-        <option value="course">Software Development</option>
-        <option value="course">Networking</option>
-        <option value="course">Cloud Computing</option>
-        <option value="course">Digital Media Marketing</option>
-        <option value="course">Al Machine Learning</option>
-        <option value="course">Shopify / Amazon</option>
+      <select
+        name="course"
+        id="course"
+        value={students.course}
+        onChange={handleChange}
+      >
+        <option value="">Select Course</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Cyber Security">Cyber Security</option>
+        <option value="Graphic Designing">Graphic Designing</option>
+        <option value="Software Development">Software Development</option>
+        <option value="Networking">Networking</option>
+        <option value="Cloud Computing">Cloud Computing</option>
+        <option value="Digital Media Marketing">Digital Media Marketing</option>
+        <option value="Al Machine Learning">Al Machine Learning</option>
+        <option value="Shopify / Amazon">Shopify / Amazon</option>
       </select>
 
       {/* submit button */}
